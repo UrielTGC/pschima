@@ -1,4 +1,4 @@
-const openModal = document.querySelector('.btn-1');
+const openModal = document.querySelector('.btn-1','.btn-2');
 const modal =document.querySelector('.modal');
 const closeModal = document.querySelector('.modal-close')
 
@@ -14,4 +14,13 @@ closeModal.addEventListener('click',(e)=>{
 
 document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var serviciosLink = document.querySelector('a[href="#Services"]');
+    serviciosLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var servicesSection = document.getElementById('Services');
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
+    });
 });

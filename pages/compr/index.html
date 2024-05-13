@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobante de Pago</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="rentalForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="courts">Select Courts:</label><br>
+        <select id="courts" name="courts[]" multiple required>
+          <option value="court1">Cancha 1</option>
+          <option value="court2">Cancha 2</option>
+          <option value="court3">Cancha 3</option>
+        </select><br>
+        <button type="submit">Submit</button>
+      </form>
+      <button id="generatePDF">Generate PDF</button>
+      <div id="pdfOutput"></div>
+      <script src="script.js"></script>
+</body>
+</html>

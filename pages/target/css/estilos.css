@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 body {
@@ -288,4 +289,8 @@ body {
 
 .formulario-tarjeta .btn-enviar:hover {
 	background: #1850b1;
+}
+
+a{
+	color: #fff;
 }
